@@ -6,29 +6,29 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Dropdown from 'react-bootstrap/Dropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import { SiSololearn } from "react-icons/si";
 import { BsSearch, BsPersonCircle } from "react-icons/bs";
+import { NavLink } from 'react-router-dom';
 
 const MainNavbar = () => {
   return (
     <>
     <Navbar dir="rtl" expand="md" className="mb-3 navbar">
           <Container fluid>
-            <Navbar.Brand className='text-light my-2 fw-bold fs-2' href="#"><SiSololearn className='mx-2'/>CodeLearn</Navbar.Brand>
+            <Navbar.Brand className='text-light my-2 fw-bold fs-2' href="/"><img src="./assets/image/logo.png" alt="codeyad"/></Navbar.Brand>
             <Navbar.Toggle className='border-0' aria-controls="offcanvasNavbar-expand-md"/>
             <Navbar.Offcanvas id="offcanvasNavbar-expand-md" aria-labelledby="offcanvasNavbarLabel-expand-md" placement="end">
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id="offcanvasNavbarLabel-expand-md">
-                  Offcanvas
+                  <img src="./assets/image/logo.png" alt="codeyad"/>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-start flex-grow-1 mx-2 my-2">
-                  <Nav.Link className='text-light fw-bold pe-4' href="#action1">دوره ها</Nav.Link>
-                  <Nav.Link className='text-light fw-bold pe-4' href="#action2">بلاگ</Nav.Link>
-                  <Nav.Link className='text-light fw-bold pe-4' href="#action2">مدرسین</Nav.Link>
-                  <Nav.Link className='text-light fw-bold pe-4' href="#action2">درباره ما</Nav.Link>
-                  <Nav.Link className='text-light fw-bold pe-4' href="#action2">پرسش و پاسخ</Nav.Link>
+                  <NavLink className='text-light fw-bold pe-4' to="/courses">دوره ها</NavLink>
+                  <NavLink className='text-light fw-bold pe-4' to="/blog">بلاگ</NavLink>
+                  <NavLink className='text-light fw-bold pe-4' to="/teachers">مدرسین</NavLink>
+                  <NavLink className='text-light fw-bold pe-4' to="/about">درباره ما</NavLink>
+                  <NavLink className='text-light fw-bold pe-4' to="/questions">پرسش و پاسخ</NavLink>
                 </Nav>
                 <Form className="d-none d-lg-flex mx-2 my-2">
                   <Form.Control

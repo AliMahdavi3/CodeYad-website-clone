@@ -1,12 +1,14 @@
 import React from 'react'
 import MainNavbar from './navbar/MainNavbar'
-import Section from './section/Section'
+import Footer from './footer/Footer'
+import Content from '../pages/Content'
 
 const Index = () => {
   return (
     <div>
         <MainNavbar/>
-        <Section/>
+        <Content/>
+        <Footer/>
     </div>
   )
 }

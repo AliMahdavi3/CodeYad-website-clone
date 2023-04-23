@@ -6,13 +6,23 @@ import { BsFillCaretLeftFill, BsFillCaretRightFill } from "react-icons/bs";
 
 const CoursesCard = () => {
   const numOfPage = 8;
-  const data = courses;
+  const [data, setData] = useState(courses)
   const [currentPage, setCurrentPage] = useState(1);
   const [courseData, setCourseData] = useState([]);
   const [pages, setPages] = useState([]);
   const [pageCount, setPageCount] = useState(1);
 
+  const categoryFilter = (catItem) => {
+    const result = courses.filter((index)=>{
+      return index.category === catItem
+    })
+    setCourseData(result)
+  }
 
+  const refreshPage = () =>{
+    window.location.reload(false)
+  }
+  
   useEffect(()=>{
     let pCount = Math.ceil(data.length / numOfPage);
     setPageCount(pCount);
@@ -30,6 +40,14 @@ const CoursesCard = () => {
 
   return (
     <div>
+      <div className='my-3 d-none d-md-flex justify-content-around flex-row-reverse'>
+          <button  className='px-2 py-1 border-0 rounded-5 fw-bold w-100 mainBackground mx-3 text-light text-center' onClick={refreshPage}>همه</button>
+          <button  className='px-2 py-1 border-0 rounded-5 fw-bold w-100 mainBackground mx-3 text-light text-center' onClick={()=>categoryFilter("web")}>برنامه نویسی سایت</button>
+          <button  className='px-2 py-1 border-0 rounded-5 fw-bold w-100 mainBackground mx-3 text-light text-center' onClick={()=>categoryFilter("ui")}>طراحی سایت</button>
+          <button  className='px-2 py-1 border-0 rounded-5 fw-bold w-100 mainBackground mx-3 text-light text-center' onClick={()=>categoryFilter("data")}>بانک اطلاعات</button>
+          <button  className='px-2 py-1 border-0 rounded-5 fw-bold w-100 mainBackground mx-3 text-light text-center' onClick={()=>categoryFilter("mobile")}>برنامه نویسی موبایل</button>
+      </div>
+
         <div className='row bg-light py-4 rounded-4 shadow-lg my-5 d-flex align-items-center justify-content-center'>
           {
             courseData.map((cour)=>{

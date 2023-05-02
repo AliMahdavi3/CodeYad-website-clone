@@ -4,24 +4,12 @@ body {
 }
 
 @font-face {
-  font-family: myfont;
-  src: url(../public/assets/fonts/Alexandria-VariableFont_wght.ttf);
-}
-@font-face {
-  font-family: myfont2;
-  src: url(../public/assets/fonts/ElMessiri-Bold.ttf);
-}
-@font-face {
-  font-family: myfont3;
-  src: url(../public/assets/fonts/Lemonada-Regular.ttf);
-}
-@font-face {
-  font-family: myfont4;
-  src: url(../public/assets/fonts/Tajawal-Black.ttf);
-}
-@font-face {
   font-family: myfont5;
   src: url(../public/assets/fonts/Vazirmatn-VariableFont_wght.ttf);
+}
+
+* {
+  font-family: myfont5;
 }
 
 .pointer {
@@ -54,8 +42,6 @@ body {
   transition: transform 0.3s ease-in-out;
   z-index: 9999;
 }
-
-
 
 .mainBackground {
   background-color: rgba(84, 7, 209, 0.8);
@@ -95,10 +81,6 @@ a {
   margin-top: 10%;
 }
 
-* {
-  font-family: myfont5;
-}
-
 /* =====================================footer============================================ */
 
 .footer {
@@ -130,4 +112,3 @@ a {
 }
 
 /* ================================login=============================== */
-

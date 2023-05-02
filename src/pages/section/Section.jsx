@@ -23,9 +23,9 @@ const Section = () => {
             <section className='col-12 col-md-4 my-4'>
 
                 {/* links */}
-                <RightList path="./assets/image/1/img (2).jpg" link="رایگان یاد بگیر" title="اموزش رایگان برنامه نویسی"/>
-                <RightList path="./assets/image/1/img (3).jpg" link="نقشه راه" title="چطوری برنامه نویس بشیم؟"/>
-                <RightList path="./assets/image/1/img (4).jpg" link="ثبت نام بوت کمپ فلاتر" title="بوت کمپ فلاتر"/>
+                <RightList path="./assets/image/1/list.png" link="رایگان یاد بگیر" title="اموزش رایگان برنامه نویسی"/>
+                <RightList path="./assets/image/1/list-2.png" link="نقشه راه" title="چطوری برنامه نویس بشیم؟"/>
+                <RightList path="./assets/image/1/list-3.png" link="ثبت نام بوت کمپ فلاتر" title="بوت کمپ فلاتر"/>
                 {/* links */}
 
                 <RightSection/>

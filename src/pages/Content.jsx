@@ -6,6 +6,8 @@ import Blog from "./blog/Blog";
 import Questions from "./questions/Questions";
 import Courses from "./courses/Courses";
 import Teachers from "./teachers/Teachers";
+import Login from "./auth/login/Login";
+import Register from "./auth/register/Register";
 
 const Content = () => {
   return (
@@ -16,6 +18,8 @@ const Content = () => {
       <Route path="/questions" element={<Questions />}/>
       <Route path="/courses" element={<Courses />}/>
       <Route path="/teachers" element={<Teachers />}/>
+      <Route path="/login" element={<Login/>}/>
+      <Route path="/register" element={<Register/>}/>
     </Routes>
   );
 };

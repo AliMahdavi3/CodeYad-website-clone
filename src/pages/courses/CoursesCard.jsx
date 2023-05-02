@@ -68,7 +68,7 @@ const CoursesCard = () => {
               )
             })
           }
-          <div className='col-12 d-flex align-items-center justify-content-center mt-5'>
+          <div dir='ltr' className='col-12 d-flex align-items-center justify-content-center mt-5'>
             <div className={`shadow-lg pagination border-0 px-3 py-3 rounded-5 fw-bold mx-1 pointer ${currentPage == 1 ? "disabled" : ""}`} 
             onClick={()=>setCurrentPage(currentPage - 1)}><BsFillCaretLeftFill/></div>
             {

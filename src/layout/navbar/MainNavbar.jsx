@@ -24,11 +24,11 @@ const MainNavbar = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-start flex-grow-1 mx-2 my-2">
-                  <NavLink className='text-light mb-3 fw-bold pe-4' to="/courses">دوره ها</NavLink>
-                  <NavLink className='text-light mb-3 fw-bold pe-4' to="/blog">بلاگ</NavLink>
-                  <NavLink className='text-light mb-3 fw-bold pe-4' to="/teachers">مدرسین</NavLink>
-                  <NavLink className='text-light mb-3 fw-bold pe-4' to="/about">درباره ما</NavLink>
-                  <NavLink className='text-light mb-3 fw-bold pe-4' to="/questions">پرسش و پاسخ</NavLink>
+                  <NavLink className='text-light my-2 fw-bold pe-4' to="/courses">دوره ها</NavLink>
+                  <NavLink className='text-light my-2 fw-bold pe-4' to="/blog">بلاگ</NavLink>
+                  <NavLink className='text-light my-2 fw-bold pe-4' to="/teachers">مدرسین</NavLink>
+                  <NavLink className='text-light my-2 fw-bold pe-4' to="/about">درباره ما</NavLink>
+                  <NavLink className='text-light my-2 fw-bold pe-4' to="/questions">پرسش و پاسخ</NavLink>
                 </Nav>
                 <Form className="d-none d-lg-flex mx-3 my-2">
                   <Form.Control
